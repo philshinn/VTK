@@ -1,0 +1,5 @@
+Mon Jan  6 11:36:38 2025	system: What's your four digit account number?
+Mon Jan  6 11:36:47 2025	user:1234
+Mon Jan  6 11:36:47 2025	system: What's your PIN?
+Mon Jan  6 11:36:50 2025	user:1234
+Mon Jan  6 11:36:50 2025	system: sorry, they do not match.

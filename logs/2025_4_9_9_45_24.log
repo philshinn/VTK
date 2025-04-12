@@ -1,0 +1,5 @@
+Wed Apr  9 09:45:24 2025	system: {Language en-US} {Choice Hi thanks for calling Walgreens | Hi thanks for calling Walgreens at the corner of International Drive and Universal Boulevard in Orlando} {Language es-US}Para continuar en español oprima nueve
+Wed Apr  9 09:45:39 2025	user:no input
+Wed Apr  9 09:45:39 2025	system: {Language en-US} How can I help you today?
+Wed Apr  9 09:45:45 2025	user:pharmacist
+Wed Apr  9 09:45:45 2025	system: OK, pharmacist Please hold for the next available pharmacist.

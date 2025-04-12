@@ -1,0 +1,9 @@
+Prompt Name	Prompt Text
+LanguageSelection	{Language es-US}Para continuar en español oprima nueve
+Greeting	{Language en-US} {Choice Hi thanks for calling Walgreens | Hi thanks for calling Walgreens at the corner of International Drive and Universal Boulevard in Orlando}
+MainMenu	{Language en-US} How can I help you today?
+Pharmacist	Okay you can say problems logging in refill a prescription prescription status or say helped me with something else
+nm_1	Sorry, I didn't get that.
+ni_1	Sorry, I didn't get that
+CovidBroadcast	Just so you know it's now recommended that people sixty five or older and people who are immunocompromised get their second covid nineteen vaccine six months after their last dose, with at least two months between doses.
+SpanishGreeting	Hola, gracias por llamar a Walgreens.

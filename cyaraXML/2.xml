@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<TestSpecification xmlns="TestSpecification.xsd">
+  <TestCases>
+    <TestCase>
+      <TestCaseName>rename me</TestCaseName>
+      <FolderPath>Phil</FolderPath>
+      <Description/>
+      <PhoneNo>18009254733</PhoneNo>
+      <Notes/>
+      <AlertMsg/>
+      <PreConnectAudio/>
+      <MinorThresholdCriticalCount>3</MinorThresholdCriticalCount>
+      <MajorThresholdCriticalCount>1</MajorThresholdCriticalCount>
+      <DataInputs/>
+      <Steps>
+        <RingingStep>
+          <MinPauseTime>0</MinPauseTime>
+          <MaxPauseTime>0</MaxPauseTime>
+          <MinorThresholdTime>5</MinorThresholdTime>
+          <MajorThresholdTime>10</MajorThresholdTime>
+        </RingingStep>
+        <CallSteps>
+          <Step>
+            <StepNo>1</StepNo>
+            <Description>Greeting</Description>
+            <ExpectedText> {Language en-US} {Choice Hi thanks for calling Walgreens | Hi thanks for calling Walgreens at the corner of International Drive and Universal Boulevard in Orlando}</ExpectedText>
+            <ReplyText/>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyExchangeType/>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <BlockPath/>
+            <MinorThresholdTime>5</MinorThresholdTime>
+            <MajorThresholdTime>10</MajorThresholdTime>
+            <MinConfidenceLevel>60</MinConfidenceLevel>
+            <PostSpeechSilenceTimeout>0</PostSpeechSilenceTimeout>
+          </Step>
+          <Step>
+            <StepNo>2</StepNo>
+            <Description>Language Selection</Description>
+            <ExpectedText> {Language es-US}Para continuar en español oprima nueve</ExpectedText>
+            <ReplyText/>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <BlockPath/>
+            <MinorThresholdTime>5</MinorThresholdTime>
+            <MajorThresholdTime>10</MajorThresholdTime>
+            <MinConfidenceLevel>60</MinConfidenceLevel>
+            <PostSpeechSilenceTimeout>3</PostSpeechSilenceTimeout>
+          </Step>
+          <Step>
+            <StepNo>3</StepNo>
+            <Description>Covid Broadcast</Description>
+            <ExpectedText> Just so you know it's now recommended that people sixty five or older and people who are immunocompromised get their second covid nineteen vaccine six months after their last dose, with at least two months between doses.</ExpectedText>
+            <ReplyText/>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyExchangeType/>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <BlockPath/>
+            <MinorThresholdTime>5</MinorThresholdTime>
+            <MajorThresholdTime>10</MajorThresholdTime>
+            <MinConfidenceLevel>60</MinConfidenceLevel>
+            <PostSpeechSilenceTimeout>0</PostSpeechSilenceTimeout>
+          </Step>
+          <Step>
+            <StepNo>4</StepNo>
+            <Description>NLU</Description>
+            <ExpectedText> {Language en-US} How can I help you today?</ExpectedText>
+            <ReplyText>pharmacist</ReplyText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <BlockPath/>
+            <MinorThresholdTime>5</MinorThresholdTime>
+            <MajorThresholdTime>10</MajorThresholdTime>
+            <MinConfidenceLevel>60</MinConfidenceLevel>
+            <PostSpeechSilenceTimeout>3</PostSpeechSilenceTimeout>
+          </Step>
+          <Step>
+            <StepNo>5</StepNo>
+            <Description>Pharmacist</Description>
+            <ExpectedText> Okay you can say problems logging in refill a prescription prescription status or say helped me with something else</ExpectedText>
+            <ReplyText/>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyExchangeType/>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <BlockPath/>
+            <MinorThresholdTime>5</MinorThresholdTime>
+            <MajorThresholdTime>10</MajorThresholdTime>
+            <MinConfidenceLevel>60</MinConfidenceLevel>
+            <PostSpeechSilenceTimeout>3</PostSpeechSilenceTimeout>
+          </Step>
+        </CallSteps>
+      </Steps>
+    </TestCase>
+  </TestCases>
+</TestSpecification>

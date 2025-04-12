@@ -1,0 +1,3 @@
+Actor	Text
+System:	Are you feeling OK?
+User:	stop

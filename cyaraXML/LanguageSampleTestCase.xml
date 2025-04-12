@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestSpecification xmlns="TestSpecification.xsd">
+  <TestCases>
+    <TestCase>
+      <TestCaseName>{Language} Tag Example</TestCaseName>
+      <MediaType>Voice</MediaType>
+      <FolderPath>_Cyara Sample Test Cases</FolderPath>
+      <Description>The {Language} Tag enables you to create Test Cases for multi-lingual IVR. It is used for speech that deviates from the default Cyara Speech Recognition language on a particular Expect To Hear Step. The 'language-country' option defines what language will be used (e.g. en-US = English, Unites States).
+
+Click on the 'Need assistance?' button above to begin the tutorial.</Description>
+      <PhoneNo>18448199261</PhoneNo>
+      <PhoneNoLocal>false</PhoneNoLocal>
+      <Notes />
+      <AlertMsg />
+      <PreConnectAudio />
+      <AlertFrequency>Once</AlertFrequency>
+      <MinorThresholdCriticalCount>3</MinorThresholdCriticalCount>
+      <MajorThresholdCriticalCount>1</MajorThresholdCriticalCount>
+      <DataInputs />
+      <Steps>
+        <RingingStep>
+          <MinPauseTime>0</MinPauseTime>
+          <MaxPauseTime>0</MaxPauseTime>
+          <MinorThresholdTime>5</MinorThresholdTime>
+          <MajorThresholdTime>10</MajorThresholdTime>
+        </RingingStep>
+        <CallSteps>
+          <Step>
+            <StepNo>1</StepNo>
+            <Description>Welcome + Account Number Request</Description>
+            <ExpectedText>{*} Welcome to Velocity Bank. {Language es-US}  Para continuar en espanol oprima dos. {Language en-US} Please enter your account number.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>DTMF</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>80</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>3.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>2</StepNo>
+            <Description>Account Number Entry</Description>
+            <ExpectedText />
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>2,8,9,5</ReplyText>
+            <ReplyExchangeType>DTMF</ReplyExchangeType>
+            <MinorThresholdTime>0</MinorThresholdTime>
+            <MajorThresholdTime>0</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>0</MajorConfidenceLevel>
+            <MinorConfidenceLevel>0</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>0</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+        </CallSteps>
+      </Steps>
+    </TestCase>
+  </TestCases>
+</TestSpecification>

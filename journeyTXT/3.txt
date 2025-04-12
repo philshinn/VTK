@@ -1,0 +1,6 @@
+Actor	Text
+System:	Are you feeling OK?
+User:	no
+System:	Sorry to hear that. What's your favorite color?
+User:	red
+System:	Get well soon. Goodbye.

@@ -1,0 +1,6 @@
+Actor	Text
+System:	Are you feeling OK?
+User:	yes
+System:	That's good! What's your favorite color?
+User:	green
+System:	I'm so happy Goodbye.

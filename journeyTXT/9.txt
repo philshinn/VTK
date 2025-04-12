@@ -1,0 +1,199 @@
+Actor	Text
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over
+System:	Are you feeling OK?
+User:	start over

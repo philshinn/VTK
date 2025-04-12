@@ -1,0 +1,19 @@
+Prompt Name	Prompt Text
+Good	That's good!
+Sorry	Sorry to hear that.
+Happy	I'm so happy
+GetBetter	Get well soon.
+HowsIt	Are you feeling OK?
+nm_1	Sorry, I didn't get that.
+ni_1	Sorry, I didn't get that
+Goodbye	Goodbye.
+WhatsYourFavoriteColor	What's your favorite color?
+GetAccountNumber	What's your account number?
+YouEntered	You entered
+$dynamic1	acctNum
+Spam	Egg, bacon, sausage and Spam
+Lobster	Lobster Thermidor aux crevettes with a Mornay sauce, garnished with truffle pâté, brandy and a fried egg on top, and Spam.
+Get4DigitAccountNumber	What's your four digit account number?
+Get4DigitPINNumber	What's your PIN?
+Match	Thank you, they match.
+NoMatch	sorry, they do not match.

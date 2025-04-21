@@ -11,6 +11,8 @@ import sys
 import subprocess
 from tkinter.scrolledtext import *
 
+from VTK_Chat import *
+
 
 LOAD_XML_BUTTON='Browse'
 INPUT_FILE_LABEL= 'Input DrawIO XML File: '
@@ -170,6 +172,45 @@ class VTK_GUI_Generator(object):
     
     def onInteract(self, event=None):
         dbg = False
+        print("-- Starting new interaction --")
+        if dbg: print("--> onInteract")
+        if dbg: print("self.xmlFileText=",self.getFieldText(self.xmlFileText))
+        inputFile = self.getFieldText(self.xmlFileText)
+        if dbg:
+            print("Info: PromptFileGenerator.onInteract: inputFile =",inputFile)
+        if inputFile == '':                                                             # if the input file has not been given
+            self.listbox.insert(END,"Please specify an input xml file")                     # ask user to give one
+        else:                                                                           # otherwise
+            if self.stateNames:                                                             # if we have a list of statenames
+                if self.startState:                                                             # if we have a start state
+                    if self.startState in self.stateNames:                                          # and the start state is in our list
+                        self.stateMachine = self.makeStateMachine(inputFile)                            # read in the state machine
+                        self.stateMachine.run(self.startState,False,None)                               # and fire it up
+            else:                                                                           # else we don't have the statenames yet
+                if dbg: print("self.startStateMenu=",self.startStateMenu)
+                if self.startStateMenu:                                                         # if we already have the start state menu
+                    self.startStateMenu.pack_forget()                                               # kill the old one                                                       
+                self.stateMachine = self.makeStateMachine(inputFile)                            # read in the state machine
+                if len(self.stateMachine.errorMsgs) > 0:
+                    for msg in self.stateMachine.errorMsgs:
+                        self.listbox.insert(END,msg)
+                self.startState = StringVar()
+                self.stateNames = list(self.stateMachine.objectName2Index.keys())               # get the list of states
+                if dbg: print("    in onInteract, stateNames=",self.stateNames)
+                self.startStateMenu = OptionMenu(self.seventhRow,self.startState,*self.stateNames,command=self.setStartState)
+                self.startStateMenu.grid(column=1,row=7)
+                if dbg: print("start State is",self.startState)
+                if self.startState in self.stateNames:
+                    self.stateMachine.run(self.startState,False,None)                           # start it up
+                else:
+                    if dbg: print("no start state")
+                    self.listbox.insert(END,"Please choose a start state")    
+        if dbg: print("<-- onInteract")
+        print("-- Ending live interaction --")
+        return
+
+    def onInteractOld(self, event=None):
+        dbg = False
         if dbg: print("--> onInteract")
         if dbg: print("self.xmlFileText=",self.getFieldText(self.xmlFileText))
         inputFile = self.getFieldText(self.xmlFileText)
@@ -185,6 +226,7 @@ class VTK_GUI_Generator(object):
                         #st = ScrolledText(master)
                         #st.pack()
                         #master.mainloop()
+                        self.stateMachine = self.makeStateMachine(inputFile)
                         self.stateMachine.run(self.startState,False,None)
             else:            
                 if dbg: print("self.startStateMenu=",self.startStateMenu)

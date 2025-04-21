@@ -13,6 +13,8 @@ from xml.etree.ElementTree import Element, SubElement, Comment, tostring
 from xml.etree import ElementTree
 from xml.dom import minidom
 
+from VTK_Chat import *
+
 
 class Step():                                                       # A step in Cyara xml format
     def __init__(self):
@@ -31,7 +33,7 @@ class Log():                                                        # A live int
         self.name = ("%s_%s_%s_%s_%s_%s") % (i.year,i.month,i.day,i.hour,i.minute,i.second) + '.log'
         self.steps = []
     def printMe(self):
-        dbg = True
+        dbg = False
         if dbg: print("\t\t--> log.printMe")
         if os.name == 'posix':
             pathmarker = '/' 
@@ -74,7 +76,7 @@ class TestCase():                                                   # A test cas
         return reparsed.toprettyxml(indent="  ")
 
     def cyaraXML(self):
-        dbg = True
+        dbg = False
         if dbg: print("\t\t\t\t-->TestCase.CyaraXML")
         root = Element('TestSpecification')
         root.set('xmlns', 'TestSpecification.xsd')
@@ -159,7 +161,7 @@ class TestCase():                                                   # A test cas
         return self.prettify(root)
 
     def journeyTXT(self,outputFile):
-        dbg = True
+        dbg = False
         with open(outputFile,"w") as outFile:
             outFile.write("Actor\tText\n")
             for aStep in self.steps:
@@ -171,14 +173,14 @@ class TestCase():                                                   # A test cas
         
     
     def printMe(self,fileName,outputType):
-        dbg = True
+        dbg = False
         if dbg: print("\t\t-->TestCase.printMe")
         if os.name == 'posix':
             pathmarker = '/' 
         else:
             pathmarker = '\\'
         path = os.getcwd()+ pathmarker
-        dbg = True
+        dbg = False
         if outputType == 'cyaraXML':
             simdir = path + "cyaraXML"
             if not os.path.exists(simdir):
@@ -200,7 +202,7 @@ class TestCase():                                                   # A test cas
 
 class Simulator():                                                  # Discovers and simulates paths through the statemachine, builds test cases
     def __init__(self,inputFileName,startStateName,**kwargs):
-        dbg = True
+        dbg = False
         if dbg: print("-->Simulator: kwargs=",kwargs)
         if 'outputType' in kwargs:
             self.outputType = kwargs['outputType']
@@ -503,7 +505,7 @@ class PythonState(State):                                           # A python s
                 sm.errorMsgs.append(msg)
 
     def run(self,sm):
-        dbg = True
+        dbg = False
         if dbg: print("Info: Python.run",self.dump())
         runResult = RunResult()
         runResult.prompts = self.prompts
@@ -1007,7 +1009,7 @@ class StateMachine:                                                 # Creates th
             if dbg: print("Info: No issues reconciling grammars.")
 
     def run(self,stateName=None,simulation=False,simDict=None):         # runs the state machine
-        dbg = True
+        dbg = False
         notDone = True
         if dbg:
             print("\nInfo: sm.run: starting.  stateName=",stateName,"simulation=",simulation,"simDict=",simDict)
@@ -1286,7 +1288,7 @@ class NewStateMachine():
         if dbg: print("Finished Initializing")
 
 if __name__ == "__main__":
-    dbg = True
+    dbg = False
     #inputFileName = "VTK 2.5.xml"
     #startStateName = 'Module2Start'
     #nsm = NewStateMachine(inputFileName)
@@ -1298,8 +1300,8 @@ if __name__ == "__main__":
     inputFileName = 'WAG.06.xml'
     startStateName = 'Start'
     nsm = NewStateMachine(inputFileName)
-    #nsm.stateMachine.run(startStateName)                                              # run the statemachine live with user input 
-    mySimulator = Simulator(inputFileName,startStateName,outputType='cyaraXML')        # run a simulation using simulated inputs 
+    nsm.stateMachine.run(startStateName)                                              # run the statemachine live with user input 
+    #mySimulator = Simulator(inputFileName,startStateName,outputType='cyaraXML')        # run a simulation using simulated inputs 
     #mySimulator = Simulator(inputFileName,startStateName)       # run a simulation using simulated inputs 
     #mySimulator = Simulator(inputFileName,startStateName,outputType='journeyTXT')       # run a simulation using simulated inputs 
 

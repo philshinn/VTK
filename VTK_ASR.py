@@ -7,9 +7,9 @@ def recognizeSpeech():
         for phrase in LiveSpeech():
             print(phrase)
             print(type(phrase))
-            #return phrase
-            #if phrase == 'stop':
-            #    return phrase
+            return phrase
+            if phrase == 'stop':
+                return phrase
 
 if __name__ == "__main__":
     phrase = recognizeSpeech()
